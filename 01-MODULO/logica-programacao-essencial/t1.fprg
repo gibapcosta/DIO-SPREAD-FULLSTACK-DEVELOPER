@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="atrei"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-26 04:00:37 "/>
+        <attribute name="created" value="YXRyZWk7Tk9URS1NR0wtSlI7MjAyMi0wNC0yNjsiMDI6Mzc6MTcgIjsyNTA2"/>
+        <attribute name="edited" value="YXRyZWk7Tk9URS1NR0wtSlI7MjAyMi0wNC0yNjsiMDQ6MDA6MzcgIjsyOzI2MDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="n1, n2, media" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite seu nome:&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Digite sua 1&#170; nota: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Digite sua 2&#170; nota:&quot;" newline="True"/>
+            <input variable="n2"/>
+            <assign variable="media" expression="(n1+n2)/2"/>
+            <if expression="media&gt;=7">
+                <then>
+                    <output expression="nome &amp; &quot;, parab&#233;ns voc&#234; tirou &quot; &amp; media &amp; &quot; e foi aprovado.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="nome &amp; &quot;, voc&#234; tirou &quot; &amp; media &amp; &quot; e n&#227;o foi aprovado. N&#227;o desista!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

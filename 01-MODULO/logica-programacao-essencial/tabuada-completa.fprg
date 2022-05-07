@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="atrei"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-26 07:48:42 "/>
+        <attribute name="created" value="YXRyZWk7Tk9URS1NR0wtSlI7MjAyMi0wNC0yNjsiMDc6MjM6NDMgIjsyNTA1"/>
+        <attribute name="edited" value="YXRyZWk7Tk9URS1NR0wtSlI7MjAyMi0wNC0yNjsiMDc6NDg6NDIgIjszOzI2MjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, num2, lim" type="Integer" array="False" size=""/>
+            <assign variable="num" expression="1"/>
+            <assign variable="lim" expression="10"/>
+            <output expression="&quot;Digite o numero que deseja calcular: &quot;" newline="True"/>
+            <input variable="num2"/>
+            <while expression="num&lt;=lim">
+                <output expression="&quot;Tabuada: &quot; &amp; num2 &amp; &quot; x &quot; &amp; num &amp; &quot; = &quot; &amp; num2*num" newline="True"/>
+                <assign variable="num" expression="num+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
