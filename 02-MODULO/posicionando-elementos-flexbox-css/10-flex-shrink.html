@@ -9,9 +9,10 @@
     <style>
 
 .container{
-max-width: 300px;
+max-width: 350px;
 border: 1px solid black;
 display: flex;
+margin-bottom: 10px;
 }
 
 .item{
@@ -19,10 +20,30 @@ background-color: orangered;
 color: white;
 text-align: center;
 margin: 5px;
+font-size: 24px;
 }
 
-.flex-shrink{
+.fshrink0{
     flex-shrink: 0;
+    flex-basis: 100px;
+}
+
+.fshrink1{
+    flex-shrink: 1;
+}
+
+.fshrink2{
+    flex-shrink: 2;
+    flex-basis: 100px;
+}
+
+.fshrink3{
+    flex-shrink: 3;
+    flex-basis: 100px;
+}
+
+.fgrow1{
+    flex-grow: 1;
 }
 
     </style>
@@ -30,12 +51,37 @@ margin: 5px;
 </head>
 <body>
 
-    <p>bases auto</p>
+    <p>flex-shrink: 1</p>
     <div class="container">
-        <div class="item bauto fg-1">A</div>
-        <div class="item bauto fg-1">BBB</div>
-        <div class="item bauto fg-1">C</div>
-        <div class="item bauto fg-2">DEF</div>
+        <div class="item fshrink1 fgrow1">A</div>
+        <div class="item fshrink1 fgrow1">BBB</div>
+        <div class="item fshrink1 fgrow1">C</div>
+        <div class="item fshrink1 fgrow1">D</div>
+        <div class="item fshrink1 fgrow1">E</div>
+    </div>
+
+    <p>flex-shrink</p>
+    <div class="container">
+        <div class="item fshrink1 fgrow1">A</div>
+        <div class="item fshrink1 fgrow1">BBB</div>
+        <div class="item fshrink1 fgrow1">Duis eleifend.</div>
+        <div class="item fshrink1 fgrow1">D</div>
+    </div>
+
+    <p>flex-shrink: 0 - basis: 100px</p>
+    <div class="container">
+        <div class="item fshrink0 fgrow1">A</div>
+        <div class="item fshrink0 fgrow1">B</div>
+        <div class="item fshrink0 fgrow1">Duis eleifend.</div>
+        <div class="item fshrink0 fgrow1">D</div>
+    </div>
+
+    <p>flex-shrink: 0, 1, 2 e 3 - basis: sem e 100px</p>
+    <div class="container">
+        <div class="item fshrink0 fgrow1">A</div>
+        <div class="item fshrink1 fgrow1">BBB</div>
+        <div class="item fshrink2 fgrow1">Duis eleifend.</div>
+        <div class="item fshrink3 fgrow1">DEF</div>
     </div>
 
 </body>
