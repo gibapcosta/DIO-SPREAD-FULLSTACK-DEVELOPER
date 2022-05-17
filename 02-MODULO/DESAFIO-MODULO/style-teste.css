@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    align-content: center;
+    /*border: 1px solid red;*/
+}
+
+body{
+    display: flex;
+    background-color: rgb(243, 243, 243);
+    font-family: Helvetica, sans-serif;
+    min-height: 100vh;
+    max-width: 992px;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.wrapper{
+    display: flex;
+    align-content: right;
+    align-items: center;
+    justify-content: start;
+    max-width: 60%;
+    height: 100vh;
+}
+
+.box-fones{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.fones{
+    position: absolute;
+    left: 150px;
+    top: 100px;
+    display: flex;
+}
+
+.box-pai{
+    position: relative;
+    display: flex;
+    flex-direction: column;    
+}
+
+.painel{
+    max-width: 992px;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    padding: 20px 40px;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;    
+}
+
+#logo{
+    width: 150px;
+    padding: 10px;
+}
+
+.foto-perfil img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.box-filho{
+    max-width: 300px;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    padding: 20px 40px;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;    
+}
+
+.btn-entrar{
+    background-color: #0095f6;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.btn-sair{
+    color: #0095f6;
+    padding-top: 10px;
+}
+
+.btn-outro-usuario{
+    padding-bottom: 1rem;
+    color: rgb(160, 160, 160)
+}
+
+.btn-alterar-usuario{
+    color: #0095f6;
+    text-decoration: none;
+}
+
+.btn-inscrever{
+    color: #0095f6;
+    text-decoration: none;
+}
+
+.app{
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+    margin-bottom: 5px;
+}
+
+.titulo-app{
+    padding-bottom: 10px;
+    text-shadow: black;
+}
+
+.img-app{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.baixar-app{
+    height: 50px;
+    width: 100px;
+    background-color: cover;
+    display: flex;
+    padding: 5px; 
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 1024px){
+    .wrapper{
+        max-width: 990px;
+    }
+}
+
+@media (max-width: 650px){
+    body{
+        background-color: #ffffff;
+    }
+
+    .wrapper{
+        width: 90%;
+    }
+
+    .box-fones{
+        display: none;
+    }
+
+    .insta-entrar{
+        width: 100%;
+    }
+    
+    .grupo{
+        border: 1px solid transparent;
+    }
+}
